@@ -1,1 +1,11 @@
 
+pipeline{
+    agent{label'master'}
+        stages{
+            stage('git clone'){
+    
+                steps{git 'https://github.com/Spandana5895/game-of-life.git'}
+    
+    }
+    }
+    }  
